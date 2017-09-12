@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysqldb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mysqldb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysqldb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysqldb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mysqldb",
+    "public": false
+  },
+  "Client": {
+    "dataSource": "mysqldb",
+    "public": true
+  }
+}
